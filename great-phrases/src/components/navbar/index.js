@@ -17,7 +17,7 @@ const Navbar = () => {
                             <a className="nav-link active" aria-current="page" href="#Home">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://github.com/PedroLaraa/Weather-Map">Projeto</a>
+                            <a className="nav-link" href="https://github.com/PedroLaraa/Great-Phrases">Projeto</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="https://pedro-lara.vercel.app" style={{color: 'green'}}>O Desenvolvedor</a>
