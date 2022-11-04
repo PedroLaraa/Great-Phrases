@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './App.css';
 import Phrases from './components/phrases';
 import Navbar from './components/navbar';
