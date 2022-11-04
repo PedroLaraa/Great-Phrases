@@ -20,6 +20,9 @@ const Navbar = () => {
                             <a className="nav-link" href="https://github.com/PedroLaraa/Great-Phrases">Projeto</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link text-danger" href="https://formacao-angular.vercel.app/listar-pensamento">Memoteca</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="https://pedro-lara.vercel.app" style={{color: 'green'}}>O Desenvolvedor</a>
                         </li>
                         <li className="nav-item dropdown">

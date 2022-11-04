@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 const RequestPhraseBtn = (props) => {
 
     return(
         <button 
-            className="btn btn-dark" 
+            className="btn btn-dark m-2" 
             style={{width: '9rem', fontSize: '1.2rem'}}
             onClick={() => props.funcao()}
         >

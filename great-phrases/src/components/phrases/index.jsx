@@ -8,8 +8,9 @@ import db from '../../db/db.js'
 
 import RequestPhraseBtn from './requestPhraseBtn';
 import ShowBoxPhrase from './showBoxPhrase';
+import PostPhraseMemoteca from './postPhraseMemoteca';
 
-const Phrases = (props) => {
+const Phrases = () => {
 
     const [frase, setFrase] = useState([]);
 
@@ -17,7 +18,7 @@ const Phrases = (props) => {
 
         const randomNumId = Math.floor(Math.random() * db.length);
 
-        const pensador = db.filter(v => v.id == randomNumId)
+        const pensador = db.filter(v => v.id === randomNumId)
 
         const pesquisa = pensador.map(v => v.nome).toString();
 
@@ -47,6 +48,10 @@ const Phrases = (props) => {
                 <section className='col-auto'>
                     <RequestPhraseBtn 
                     funcao={retornaFrases}
+                    />
+                    <PostPhraseMemoteca 
+                    conteudo={frase ? frase.map(v => v.texto) : ''}
+                    autoria={frase ? frase.map(v => v.autor) : ''}
                     />
                 </section>
             </div>
